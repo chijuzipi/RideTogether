@@ -1,0 +1,52 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>My Parse App</title>
+  <meta name="description" content="My Parse App">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.18.min.js"></script>
+  <script type="text/javascript">
+  Parse.initialize("b0jfwJsQkNWPdoKnDgd8KJLufCLWNJpmc5vBTkqr", "X90Jzs3gzKceNOdkFmCle8ZiwsE0HGhyNF4N3Wcj");
+    var TestObject = Parse.Object.extend("TestObject");
+    var query = new Parse.Query(TestObject);
+    
+    function enroll(frm){
+      if (frm.txtName.value == "")
+        alert("please enter your name.");
+      else if (frm.txtAddress.value == "")
+        alert("please enter your address.");
+      else if(frm.txtCar.value == "")
+        alert("please specify your car model.");
+      else {
+        var driver = new TestObject();
+        driver.save({Name: frm.txtName.value, Address: frm.txtAddress.value, Car: frm.txtCar.value});
+        alert('driver profile created');
+      }
+    }
+
+  </script>
+</head>
+
+<body>
+  
+  <div id="main">
+    <h1>sharing if always great!</h1>
+    <p>Please enter your information</p>
+  </div>
+  
+  <FORM NAME="test">
+    <p>Name  :      <input type="text" name = "txtName" ><BR>
+    <p>Address:   <input type="text" name = "txtAddress" ><BR>
+    <p>Car type:  <input type="text" name = "txtCar" ><BR>
+    <p/>
+    <INPUT TYPE="Button" Value="save driver profile" onClick="enroll(this.form)"><BR>
+  </FORM>
+
+    
+
+</body>
+
+</html>

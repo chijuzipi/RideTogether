@@ -9,9 +9,8 @@
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.18.min.js"></script>
   <script type="text/javascript">
-  Parse.initialize("ilS8dRyPiIgYZt8rfKgcIaSlPvo5knHsMEOwKiSJ", "e1JkunoNhD7zPdWXpWIlJ11nPkrqTb1YEYLezO55");
-    var TestObject = Parse.Object.extend("TestObject");
-    var query = new Parse.Query(TestObject);
+  Parse.initialize("b0jfwJsQkNWPdoKnDgd8KJLufCLWNJpmc5vBTkqr", "X90Jzs3gzKceNOdkFmCle8ZiwsE0HGhyNF4N3Wcj");
+    var Users = Parse.Object.extend("Users");
     
     function enroll(frm){
       if (frm.txtName.value == "")
@@ -21,15 +20,12 @@
       else if(frm.txtCar.value == "")
         alert("please specify your car model.");
       else {
-        var driver = new TestObject();
-        driver.save({Name: frm.txtName.value, Address: frm.txtAddress.value, Car: frm.txtCar.value});
-        alert('driver profile created');
+        var driver = new Users();
+        driver.save({Name: frm.txtName.value, Address: frm.txtAddress.value, CarType: frm.txtCar.value});
+        alert('Thank you! your driver profile created');
       }
     }
 
-    function query(){
-
-    }
   </script>
 </head>
 
@@ -37,7 +33,7 @@
   
   <div id="main">
     <h1>sharing if always great!</h1>
-    <p>Please enter your information</p>
+    <p>Please enter your information to signup:</p>
   </div>
   
   <FORM NAME="test">
@@ -45,13 +41,9 @@
     <p>Address:   <input type="text" name = "txtAddress" ><BR>
     <p>Car type:  <input type="text" name = "txtCar" ><BR>
     <p/>
-    <INPUT TYPE="Button" Value="save driver profile" onClick="enroll(this.form)"><BR>
-
+    <INPUT TYPE="Button" Value="Sign up" onClick="enroll(this.form)"><BR>
   </FORM>
 
-  <div id="query">
-    <INPUT TYPE="Button" Value="show driver list" onClick="query()">
-  </div>
     
 
 </body>

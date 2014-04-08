@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        
+        <title> Ride Together </title>
+
+        <link rel="stylesheet" href="CSS/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here|Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="Plugins/FontAwesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="Plugins/Grid/css/default.css" />
+        <link rel="stylesheet" type="text/css" href="Plugins/Grid/css/component.css" />
+
+        <script src="Plugins/Grid/js/modernizr.custom.js"></script>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    </head>
+	
+	<body class="fancy">
+        <!-- HEADER -->
+        <div class="header">
+            <h1>RideTogether
+                <span>
+                    <a href="#"><i class="fa fa-bars fa-lg"></i></a>
+                    <p>Menu</p>
+                </span>
+            </h1>     
+        </div>
+
+        <!-- RIDES INFORMATION -->
+        <div id="container">
+            <header>
+                <h1>Available Rides</h1>    
+            </header>
+
+            <ul class="grid effect-2" id="grid">
+                <li class="ride-info">
+                    <div class="avatar">
+                        <i class="fa fa-user fa-5x"></i>
+                        <h1>Chris Riesbeck</h1>
+                        <span>
+                            <i class="fa fa-map-marker"></i>
+                            <span>2133 Sheridan Road</span>
+                        </span>
+                        <p>0.32 miles away</p>
+                    </div>
+                    <div class="details">
+                        <h1>Jewel-Osco</h1>
+                        <p>Leaving from Plex to go to Jewel. Will only be there for 2 hours. Will also be available to drop off.</p>
+                        <p>Duration: 2 hours</p>
+                        <p>Car Type: Sedan - Nissan Altima</p>
+                        <p>Cost: $10 (flat rate)</p>
+                    </div>
+                    <div class="register">
+                        <span><span>Rating: </span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span>
+
+                        <span><i class="fa fa-phone"></i> Contact Driver</span>
+
+                        <span><i class="fa fa-pencil"></i> Request Ride</span>
+                    </div>
+                </li>
+                
+                <li class="ride-info">
+                    <div class="avatar">
+                        <i class="fa fa-user fa-5x"></i>
+                        <h1>Michael Horn</h1>
+                        <span>
+                            <i class="fa fa-map-marker"></i>
+                            <span>Foster-Walker Complex</span>
+                        </span>
+                        <p>0.56 miles away</p>
+                    </div>
+                    <div class="details">
+                        <h1>Target & Best Buy</h1>
+                        <p>Leaving from Plex to go to Jewel. Will only be there for 2 hours. Will also be available to drop off.</p>
+                        <p>Duration: 2 hours</p>
+                        <p>Car Type: Sedan - Nissan Altima</p>
+                        <p>Cost: $10 (flat rate)</p>
+                    </div>
+                    <div class="register">
+                        <span><span>Rating: </span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span>
+
+                        <span><i class="fa fa-phone"></i> Contact Driver</span>
+
+                        <span><i class="fa fa-pencil"></i> Request Ride</span>
+                    </div>
+                </li>
+
+                <li class="ride-info">
+                    <div class="avatar">
+                        <i class="fa fa-user fa-5x"></i>
+                        <h1>Michael Horn</h1>
+                        <span>
+                            <i class="fa fa-map-marker"></i>
+                            <span>Foster-Walker Complex</span>
+                        </span>
+                        <p>0.56 miles away</p>
+                    </div>
+                    <div class="details">
+                        <h1>Target & Best Buy</h1>
+                        <p>Leaving from Plex to go to Jewel. Will only be there for 2 hours. Will also be available to drop off.</p>
+                        <p>Duration: 2 hours</p>
+                        <p>Car Type: Sedan - Nissan Altima</p>
+                        <p>Cost: $10 (flat rate)</p>
+                    </div>
+                    <div class="register">
+                        <span><span>Rating: </span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span>
+
+                        <span><i class="fa fa-phone"></i> Contact Driver</span>
+
+                        <span><i class="fa fa-pencil"></i> Request Ride</span>
+                    </div>
+                </li>
+                <li><a href="http://drbl.in/fWMT"><img src="Plugins/Grid/images/4.jpg"></a></li>
+                <li><a href="http://drbl.in/fQdt"><img src="Plugins/Grid/images/12.png"></a></li>
+                <li><a href="http://drbl.in/fHaa"><img src="Plugins/Grid/images/13.png"></a></li>
+                <li><a href="http://drbl.in/gXMo"><img src="Plugins/Grid/images/10.png"></a></li>
+                <li><a href="http://drbl.in/gXMn"><img src="Plugins/Grid/images/9.jpg"></a></li>
+                <li><a href="http://drbl.in/fzYo"><img src="Plugins/Grid/images/2.jpg"></a></li>
+            </ul>
+        </div>
+
+        <script src="Plugins/Grid/js/masonry.pkgd.min.js"></script>
+        <script src="Plugins/Grid/js/imagesloaded.js"></script>
+        <script src="Plugins/Grid/js/classie.js"></script>
+        <script src="Plugins/Grid/js/AnimOnScroll.js"></script>
+        <script>
+            new AnimOnScroll( document.getElementById( 'grid' ), {
+                minDuration : 0.4,
+                maxDuration : 0.7,
+                viewportFactor : 0.2
+            } );
+        </script>
+
+	</body>
+</html>

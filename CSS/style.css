@@ -1,0 +1,357 @@
+@charset "UTF-8";
+
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	/*background-image: url('Images/bg.png');*/
+	/*background-color: #fcf9f2;*/
+	background-color: #f1f1f1;
+    text-align: center;
+    /*padding: 0 25px;*/
+    /*margin: auto;*/
+    -webkit-tap-highlight-color: rbga(255, 255, 255, 0); 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#main {
+    margin: auto;
+    text-align: left;
+    background: white;
+    padding: 50px 60px;
+    border: solid #ddd;
+    border-width: 0 1px 1px 1px;
+}
+
+#main h1 {
+    margin-top: 0;
+    font-size: 35px;
+}
+
+#main ul {
+    padding-left: 20px;
+}
+
+#main .error {
+    border: 1px solid red;
+    background: #FDEFF0;
+    padding: 20px;
+}
+
+#main .success {
+    margin-top: 25px;
+}
+
+#main .success code {
+    font-size: 12px;
+    color: green;
+    line-height: 13px;
+}
+
+
+.header{
+    padding:10px 60px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.subheader{
+    text-align: center;
+    margin-top: 5%;
+}
+
+#query {
+    list-style: none;
+    width: 100%;
+}
+
+.row:hover {
+    background-color: white;
+}
+
+.row{
+    margin-bottom: 20px;
+}
+
+.info{
+    background-color: white;
+}
+
+.row p{
+    width:175px;
+    display:inline-block;
+    text-align: center;
+    margin: 0 auto;
+    word-wrap: break-word;
+}
+
+#container {
+	/*width: 50%;*/
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-top: 10%;
+	text-align: center;
+	height: 100%;
+}
+
+h2, p, ol, ul, li {
+    margin:0px;
+    padding:0px;
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+ 
+#container {
+    width:300px;    
+    margin:auto;
+    margin-top:100px;
+}
+ 
+/*-----------------------------------------------------*/
+/*------------------------ home -----------------------*/
+
+#title > span {
+	font-size: 3.5em;
+	line-height: 1.3;
+	margin: 0;
+	color: #919191;
+	font-weight: 300;
+	/*text-align: center;*/
+}
+
+#cursive {
+	font-family: 'Just Me Again Down Here', cursive;
+	font-size: 1.4em;
+	text-align: center;
+}
+
+#title > p {
+	display: block;
+	font-size: 70%;
+	color: #B1B1B1;
+	padding-top: 4%;
+	text-align: center;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+#buttons {
+	width: 40%;
+	margin: 0 auto;
+}
+
+
+/*----- buttons -----*/
+
+
+.a-btn{
+    -webkit-border-radius:12px;
+    -moz-border-radius:12px;
+    border-radius:12px;
+    padding:10px 30px 10px 70px;
+    position:relative;
+    /*float:left;*/
+    display:block;
+    overflow:hidden;
+    margin:10px;
+    background:#fff;
+    text-decoration: none;
+    /*width: 150px;*/
+    height: 32px;
+    color:#555;
+    background:-webkit-gradient(linear,left top,left bottom,color-stop(rgba(255,255,255,1),0),color-stop(rgba(246,246,246,1),0.74),color-stop(rgba(237,237,237,1),1));
+    background:-webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 74%, rgba(237,237,237,1) 100%);
+    background:-moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 74%, rgba(237,237,237,1) 100%);
+    background:-o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 74%, rgba(237,237,237,1) 100%);
+    background:linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 74%, rgba(237,237,237,1) 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );
+    -webkit-box-shadow:0px 0px 7px rgba(0,0,0,0.2), 0px 0px 0px 1px rgba(188,188,188,0.1);
+    -moz-box-shadow:0px 0px 7px rgba(0,0,0,0.2), 0px 0px 0px 1px rgba(188,188,188,0.1);
+    box-shadow:0px 0px 7px rgba(0,0,0,0.2), 0px 0px 0px 1px rgba(188,188,188,0.1);
+    -webkit-transition:box-shadow 0.3s ease-in-out;
+    -moz-transition:box-shadow 0.3s ease-in-out;
+    -o-transition:box-shadow 0.3s ease-in-out;
+    transition:box-shadow 0.3s ease-in-out;
+}
+
+.btn-symbol{
+    font-size:20px;
+    text-shadow:1px 1px 2px rgba(255,255,255,0.5);
+    position:absolute;
+    left:20px;
+    line-height:32px;
+    -webkit-transition:opacity 0.3s ease-in-out;
+    -moz-transition:opacity 0.3s ease-in-out;
+    -o-transition:opacity 0.3s ease-in-out;
+    transition:opacity 0.3s ease-in-out;
+}
+
+.btn-text{
+    font-size:20px;
+    line-height:16px;
+    font-weight:bold;
+    text-shadow:1px 1px 2px rgba(255,255,255,0.5);
+    display:block;
+}
+
+.sub-text{
+    font-size:10px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    text-shadow:0px 1px 1px rgba(255,255,255,0.9);
+}
+
+.a-btn:hover{
+    background: #08cbc4;
+    -webkit-box-shadow:0px 0px 9px rgba(0,0,0,0.4), 0px 0px 0px 1px rgba(188,188,188,0.1);
+    -moz-box-shadow:0px 0px 9px rgba(0,0,0,0.4), 0px 0px 0px 1px rgba(188,188,188,0.1);
+    box-shadow:0px 0px 9px rgba(0,0,0,0.4), 0px 0px 0px 1px rgba(188,188,188,0.1);
+    color: white;
+    text-shadow: 0px;
+}
+
+.a-btn:hover {
+    -webkit-animation:slideDown 0.9s linear infinite;
+    -moz-animation:slideDown 0.9s linear infinite;
+    animation:slideDown 0.9s linear infinite;
+}
+
+.a-btn:active{
+    background: #08cbc4;
+    -webkit-box-shadow:0px 2px 2px rgba(0,0,0,0.6) inset, 0px 0px 0px 1px rgba(188,188,188,0.1);
+    -moz-box-shadow:0px 2px 2px rgba(0,0,0,0.6) inset, 0px 0px 0px 1px rgba(188,188,188,0.1);
+    box-shadow:0px 2px 2px rgba(0,0,0,0.6) inset, 0px 0px 0px 1px rgba(188,188,188,0.1);
+}
+
+.a-btn:active .btn-text{
+    color:#fff;
+    text-shadow:0px 1px 1px rgba(0,0,0,0.3);
+}
+
+.a-btn:active .sub-text{
+    color:rgba(0,0,0,0.4);
+    text-shadow:none;
+}
+
+
+/*-----------------------------------------------------*/
+/*------------------------ rides ----------------------*/
+
+.fancy {
+	background-image: url('Images/bg.png');
+}
+
+.header {
+	background-color: #08cbc4;
+	top:0;
+	margin:0;
+	padding:0;
+	position: fixed;
+	width: 100%;
+	height: 40px;
+	color: white;
+	z-index: 999;
+}
+
+.header > h1 {
+	text-align: center;
+	line-height: 3em;
+	margin:0;
+	display: block;
+	font-size: 80%;
+	letter-spacing: 5px;
+}
+
+.header > h1 > span {
+	float: right;
+	margin-right: 3%;
+	font-size: 1.5em;
+	text-decoration: none;
+	line-height: 1.7em;
+}
+
+.header > h1 > span > a {
+	text-decoration: none;
+	color: white !important;
+}
+
+.header > h1 > span > p{
+	font-size: 45%;
+	margin:0;
+	padding:0;
+	line-height: 0;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+}
+
+.ride-info {
+	background-color: #f7f7f7;
+	border: 7px solid white;
+	-webkit-box-shadow:0px 0px 9px rgba(0,0,0,0.4), 0px 0px 0px 1px rgba(188,188,188,0.1);
+    -moz-box-shadow:0px 0px 9px rgba(0,0,0,0.4), 0px 0px 0px 1px rgba(188,188,188,0.1);
+    box-shadow:0px 0px 9px rgba(0,0,0,0.4), 0px 0px 0px 1px rgba(188,188,188,0.1);
+    margin-bottom: 3%;
+}
+
+.avatar {
+	float: left;
+	margin: 2% 3% 0 0;
+	width: 20%;
+}
+
+.avatar > h1 {
+	font-size: 1.2em;
+	margin: 0;
+	padding:0 0 5px 0px;
+}
+
+.avatar > p {
+	margin: 0;
+	padding:0;
+	font-size: 0.7em;
+}
+
+.avatar > span > span {
+	font-size: 70%;
+	margin: 0;
+	padding:0 0 0 5px;
+}
+
+.details {
+	margin-top: 2%;
+	float: left;
+	border-bottom: solid 1px;
+}
+
+.details > h1 {
+	font-size: 2.2em;
+	font-family: 'Just Me Again Down Here', cursive;
+	text-align: center;
+	padding:0;
+	margin:0;
+}
+
+.details > p {
+	padding: 2px 0;
+	margin:0;
+	font-size: 70%;
+	text-align: left;
+}
+
+.register {
+	clear: both;
+	font-size: 0.8em;
+}
+
+.register > span {
+	padding-right: 2%;
+}

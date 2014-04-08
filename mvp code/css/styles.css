@@ -2,10 +2,11 @@ body {
     background: #eee;
     text-align: center;
     padding: 0 25px;
+     width: 500px;
+    margin: auto;
 }
 
 #main {
-    width: 500px;
     margin: auto;
     text-align: left;
     background: white;
@@ -37,4 +38,40 @@ body {
     font-size: 12px;
     color: green;
     line-height: 13px;
+}
+
+
+.header{
+    padding:10px 60px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.subheader{
+    text-align: left;
+}
+
+#query{
+list-style: none;
+width: 100%;
+
+}
+
+.row:hover{
+    background-color: white;
+}
+
+.row{
+    margin-bottom: 20px;
+}
+
+.info{
+    background-color: white;
+}
+
+.row p{
+    width:164px;
+    display:inline-block;
+    text-align: left;
+    margin: 0 auto;
 }
